@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css" />
+    <title>Mine Sweeper</title>
+</head>
+
+<body onload="initGame()">
+    <header>
+        <h1>Mine Sweeper</h1>  
+        <ul></ul> 
+       <button class="smile" onclick="initGame()"><img src="img/sun-smile.png"/> 
+        <div class="level">
+            <button onclick="levelPick(1)">Begginer</button>
+            <button onclick="levelPick(2)">Medium</button>
+            <button onclick="levelPick(3)">Expert</button>
+        </div>  
+        <h3>Time: <span></span> </h3>
+    </header>   
+   
+
+    <div class="board">
+
+
+    </div>
+
+
+    <script src=" js/util.js"></script>
+    <script src=" js/main.js"></script>
+</body>
+
+
+</html>
