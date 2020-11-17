@@ -2,9 +2,9 @@ const FLOOR = 'FLOOR';
 const MINE = 'MINE';
 const FLAG = 'FLAG';
 
-const MINE_IMG = '<img src="img/bomb.png" />';
-const FLAG_IMG = '<img src="img/flagged.png" />';
-const HAERT_IMG = '<img src="img/heart100.png" />';
+const MINE_IMG = '💣';
+const FLAG_IMG = '🚩';
+const HAERT_IMG = '❤️';
 const NO_LIVE = '<h2>No More Lives!</h2>';
 const GAME_OVER = '<h2>Game Over!</h2>';
 
@@ -32,7 +32,7 @@ function initGame() {
     gGame.minesMarked = 0;
     gGame.lives = 3;
     renderBoard(gBoard);
-    document.querySelector('.smile').innerHTML = '<img src="img/sun-smile.png"/>';
+    document.querySelector('.smile').innerHTML = '😀';
 }
 
 function levelPick(level) {
@@ -264,7 +264,7 @@ function gameOver(elCell) {
             console.log('You Lose!')
             clearInterval(gStopWatch);
             gGame.isOn = false;
-            document.querySelector('.smile').innerHTML = '<img src="img/sun-sad.png"/>';
+            document.querySelector('.smile').innerHTML = '🤯';
         }
     }
 }
@@ -274,6 +274,6 @@ function checkIfPlayerWon() {
         console.log('Player Won!');
         gGame.isOn = false;
         clearInterval(gStopWatch)
-        document.querySelector('.smile').innerHTML = '<img src="img/sun-glasses.png"/>';
+        document.querySelector('.smile').innerHTML = '😎';
     }
 }
